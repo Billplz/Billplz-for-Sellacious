@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="sellaciouspayment" method="upgrade">
+	<name>plg_sellaciouspayment_billplz</name>
+	<author>Billplz</author>
+	<creationDate>March 24, 2018</creationDate>
+	<copyright>Copyright (C) 2018 Billplz Sdn. Bhd. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>wan@billplz.com</authorEmail>
+	<authorUrl>www.billplz.com</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_SELLACIOUSPAYMENT_BILLPLZ_XML_DESCRIPTION</description>
+	<files>
+		<folder>forms</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<filename plugin="billplz">billplz.php</filename>
+		<filename>api.php</filename>
+		<filename>connect.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field
+				name="billplz_api_key"
+				type="text"
+				size="50"
+				required="true"
+				description="PLG_SELLACIOUSPAYMENT_BILLPLZ_API_KEY_DESCRIPTION"
+				label="PLG_SELLACIOUSPAYMENT_BILLPLZ_API_KEY_DESCRIPTION_LABEL"
+				class="inputbox"
+			/>
+			<field
+				name="billplz_x_signature_key"
+				type="text"
+				size="50"
+				required="true"
+				description="PLG_SELLACIOUSPAYMENT_BILLPLZ_X_SIGNATURE_KEY_DESCRIPTION"
+				label="PLG_SELLACIOUSPAYMENT_BILLPLZ_X_SIGNATURE_KEY_DESCRIPTION_LABEL"
+				class="inputbox"
+			/>
+			<field
+				name="billplz_collection_id"
+				type="text"
+				size="50"
+				required="false"
+				description="PLG_SELLACIOUSPAYMENT_BILLPLZ_COLLECTION_ID_DESCRIPTION"
+				label="PLG_SELLACIOUSPAYMENT_BILLPLZ_COLLECTION_ID_DESCRIPTION_LABEL"
+				class="inputbox"
+			/>
+			<field
+				name="billplz_notification"
+				type="radio"
+				default="0"
+				description="PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTIFICATION_DESCRIPTION"
+				label="PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTIFICATION_DESCRIPTION_LABEL"
+			>
+				<option value="0">PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTIFICATION_OFF</option>
+				<option value="3">PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTIFICATION_ON</option>
+			</field>
+			 <field
+				 name="note"
+				 type="note"
+				 heading="h1"
+				 description="PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTE_DESC"
+				 label="PLG_SELLACIOUSPAYMENT_BILLPLZ_NOTE_LABEL"
+			 />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

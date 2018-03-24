@@ -1,0 +1,14 @@
+{
+    "name": "billplz/sellacious",
+    "description": "Accept Payment using Billplz for Sellacious",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billplz",
+            "email": "wan@billplz.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
